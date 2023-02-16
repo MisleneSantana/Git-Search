@@ -1,0 +1,162 @@
+.searchPage__container {
+    width: 100%;
+    height: 100%;
+}
+
+.searchPage__container>section {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchPage__sectionLogo {
+    background-color: var(--main-brand-color);
+    width: 44rem;
+}
+
+.searchPage__sectionSearch {
+    background-color: var(--grey-800);
+}
+
+.homePage__container,
+.search__container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.homePage__container,
+.search__container {
+    gap: 2.5rem;
+}
+
+.homePage__container>h1 {
+    width: auto;
+    font-size: var(--title1);
+    font-weight: 600;
+    line-height: 3rem;
+    color: var(--white-500);
+}
+
+.homePage__container>p {
+    display: flex;
+    font-size: var(--text1);
+    line-height: 1.875rem;
+    color: var(--white-500);
+}
+
+.search__container>div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.search__title {
+    font-size: var(--text1);
+    font-weight: 500;
+    line-height: 1.875rem;
+    color: var(--white-500);
+}
+
+.search__label {
+    font-size: var(--text2);
+    font-weight: 500;
+    color: var(--white-500);
+    line-height: 1.3125rem;
+}
+
+.search__user,
+.search__button {
+    height: var(--button-search-height);
+    outline: none;
+    border-radius: var(--border-radius);
+}
+
+.search__user {
+    background-color: var(--grey-850);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: var(--text3);
+    font-weight: 400;
+    line-height: 1.3125rem;
+    color: #FFFFFF50;
+    padding: 0rem 0.625rem;
+}
+
+.search__button {
+    background-color: var(--secondary-brand-color);
+    border: none;
+    font-size: var(--text2);
+    font-weight: 500;
+    color: var(--white-500);
+}
+
+@media (min-width: 479px) {
+    .search__user,
+    .search__button {
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 769px) {
+    .searchPage__container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .searchPage__container>section {
+        height: 100%;
+        width: 50%;
+    }
+
+    .homePage__container,
+    .search__container {
+        width: 60%;
+    }
+
+    .search__title {
+        font-size: var(--title2);
+    }
+}
+
+@media (min-width: 900px) {
+    .homePage__container>p {
+        font-size: var(--title2);
+    }
+
+    .search__user {
+        font-size: var(--text2);
+    }
+}
+
+@media (min-width: 967px) {
+    .search__user {
+        width: 296px;
+        height: 38px;
+
+    }
+
+    .search__button {
+        width: 316px;
+        height: 38px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .search__title,
+    .search__label,
+    .search__user,
+    .search__button {
+        width: 100%;
+    }
+
+    .search__user {
+        width: 95.5%;
+        padding: 0 10px;
+    }
+}

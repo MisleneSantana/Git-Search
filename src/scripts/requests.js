@@ -11,6 +11,7 @@ export async function getUserByName(userName) {
         .then((responseJason) => {
 
             if (responseJason.message !== 'Not Found') {
+                console.log(responseJason.message)
                 localStorage.setItem('userFound', JSON.stringify(responseJason))
                 acessUserRepositary(userName);
             } else {

@@ -5,7 +5,9 @@ export function searchUserByName() {
     let searchButton = document.querySelector('.search__button');
 
     searchButton.addEventListener('click', async (event) => {
-        let user = await getUserByName(inputUserSearch.value);
+
+        let userName = inputUserSearch.value.replaceAll(' ', '');
+        let user = await getUserByName(userName);
 
         return user;
     });

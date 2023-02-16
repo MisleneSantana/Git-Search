@@ -1,0 +1,173 @@
+.errorPage__container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.errorMessage__container,
+.errorImage__container {
+    width: 80%;
+    height: 50%;
+}
+
+.errorMessage__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1.25rem;
+}
+
+.errorMessage__container>h1 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 2.375rem;
+    font-weight: 700;
+    color: var(--white-500);
+}
+
+.errorMessage__container>p {
+    font-size: var(--text1);
+    color: var(--white-500);
+}
+
+.errorMessage__container>p>strong {
+    font-weight: 600;
+}
+
+.errorMessage__container>a {
+    display: flex;
+    height: 3.75rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-brand-color);
+    border-radius: calc(var(--border-radius)*2);
+    border: transparent;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--white-500);
+}
+
+.errorImage__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.errorImage__empty,
+.errorImage__image {
+    border-radius: 0.3125rem;
+}
+
+.errorImage__empty {
+    background-color: var(--color-error);
+    width: 80%;
+    height: 12.5rem;
+
+}
+
+.errorImage__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-brand-color);
+    width: 80%;
+    height: 12.5rem;
+    position: absolute;
+    top: 85px;
+    right: 45px;
+}
+
+.errorImage__image>img {
+    width: 90px;
+    height: 80px;
+}
+
+@media(min-width: 321px) {
+    .errorImage__image {
+        top: 85px;
+        right: 55px;
+    }
+}
+
+@media(min-width: 480px) {
+    .errorPage__container {
+        flex-direction: row;
+        width: 80%;
+        height: 99vh;
+        margin: 0 auto;
+        gap: 3rem;
+    }
+
+    .errorImage__image {
+        position: absolute;
+        top: 320px;
+    }
+
+    .errorMessage__container,
+    .errorImage__container {
+        width: 50%;
+        height: 100%;
+        padding: 0 1rem;
+    }
+
+    .errorMessage__container {
+        justify-content: center;
+    }
+}
+
+@media(min-width: 769px) {
+
+    .errorImage__empty,
+    .errorImage__image {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media(min-width: 800px) {
+    .errorImage__image {
+        top: 320px;
+        right: 70px;
+    }
+}
+
+@media(min-width: 860px) {
+    .errorImage__image {
+        top: 320px;
+        right: 90px;
+    }
+}
+
+@media(min-width: 960px) {
+    .errorImage__image {
+        top: 320px;
+        right: 100px;
+    }
+}
+
+@media(min-width: 1000px) {
+    .errorImage__image {
+        right: 110px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .errorImage__image {
+        right: 150px;
+    }
+
+    .errorMessage__container>p {
+        width: 342px;
+        height: 60px;
+    }
+
+    .errorMessage__container>a {
+        width: 342px;
+        height: 60px;
+    }
+}

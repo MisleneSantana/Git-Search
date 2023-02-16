@@ -18,9 +18,10 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video, input, button, textarea {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	border: 1px solid red;
 	font: inherit;
 	vertical-align: baseline;
+	text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 

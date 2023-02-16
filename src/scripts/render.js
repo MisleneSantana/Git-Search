@@ -8,9 +8,9 @@ export function renderUser(userData) {
     userContainer.appendChild(user);
 
     return userContainer;
-}
+};
 
-export function createUser(element) {
+function createUser(element) {
     let userContainer = document.createElement('figure');
     let userImage = document.createElement('img');
     let userName = document.createElement('figcaption');
@@ -23,7 +23,7 @@ export function createUser(element) {
     userContainer.append(userImage, userName);
 
     return userContainer;
-}
+};
 
 export function renderRepositary(array) {
     let listRepositary = document.querySelector('.main__list');
@@ -36,7 +36,7 @@ export function renderRepositary(array) {
         listRepositary.appendChild(cardRepositary);
     })
     return listRepositary;
-}
+};
 
 function createRepositaryCard(element) {
     let cardContainerRepositary = document.createElement('li');

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
@@ -15,7 +15,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="src/styles/reset.css">
   <link rel="stylesheet" href="src/styles/globalStyles.css">
-  <link rel="stylesheet" href="src/styles/search.css">
+  <link rel="stylesheet" href="src/styles/index.css">
   <link rel="stylesheet" href="src/styles/profile.css">
   <link rel="stylesheet" href="src/styles/error.css">
 
@@ -28,17 +28,23 @@
 <body>
 
   <div class="searchPage__container">
-    <section class="homePage__container">
-      <h1>Git Search</h1>
-      <p>Encontre e se conecte com profissionais de forma rápida e fácil</p>
+    <section class="searchPage__sectionLogo">
+      <div class="homePage__container">
+        <h1>Git Search</h1>
+        <p>Encontre e se conecte com profissionais de forma rápida e fácil</p>
+      </div>
     </section>
 
-    <section class="search__container">
-      <h3 class="search__title">Procurar por um usuário</h3>
-      <p></p>
-      <input class="search__user" type="text" placeholder="Digite um usuário do github aqui..." required="true">
-      <button class="search__button">Ver perfil do github</button>
-    </section>
+    <section class="searchPage__sectionSearch">
+      <div class="search__container">
+        <h3 class="search__title">Procurar por um usuário</h3>
+        <div>
+          <p class="search__label">Usuário GitHub</p>
+          <input class="search__user" type="text" placeholder="Digite um usuário do github aqui..." required="true">
+          <button class="search__button">Ver perfil do github</button>
+        </div>
+      </div>
+    </section> 
   </div>
 
 </body>

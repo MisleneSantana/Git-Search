@@ -1,14 +1,11 @@
 import { renderUser, renderRepositary } from './render.js';
 
-export function showSearch() {
+function showSearch() {
     const user = JSON.parse(localStorage.getItem('userFound'));
     const repositories = JSON.parse(localStorage.getItem('repositories'));
 
     renderUser(user);
-
     renderRepositary(repositories);
-
-    return user;
 }
 
 function newSearch() {
@@ -19,7 +16,6 @@ function newSearch() {
     buttonChangeUser.addEventListener('click', (event) => {
         window.location.replace('/');
     })
-
 }
 
 showSearch();

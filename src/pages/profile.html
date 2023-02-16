@@ -15,40 +15,44 @@
   <!-- CSS -->
   <link rel="stylesheet" href="../styles/reset.css">
   <link rel="stylesheet" href="../styles/globalStyles.css">
-  <link rel="stylesheet" href="../styles/search.css">
+  <link rel="stylesheet" href="../styles/index.css">
   <link rel="stylesheet" href="../styles/profile.css">
   <link rel="stylesheet" href="../styles/error.css">
 
   <!-- JS-->
-               
+
   <script type="module" src="../scripts/profile.js" defer></script>
 
   <title>Git Search - User Profile</title>
 </head>
 
 <body>
-  <header>
-    <div class="header__container">
-      <figure class="header__user">
-        <img src="#" alt="User Photo">
-        <figcaption>Nome do usuário</figcaption>
-      </figure>
+  <div id="desktop">
+    <div class="profile__container">
+      <header>
+        <div class="header__container">
+          <!-- <figure class="header__user">
+          <img src="#" alt="User Photo">
+          <figcaption>Nome do usuário</figcaption>
+        </figure> -->
+        </div>
+
+        <nav class="nav__container">
+          <button id="changeUser" class="nav__button" type="button">Trocar de usuário</button>
+        </nav>
+      </header>
+
+      <main class="main__container">
+        <ul class="main__list">
+          <!-- <li class="main__card">
+          <h3>Nome do projeto</h3>
+          <p>Descrição do projeto</p>
+          <a href="#" target="_blank">Repositório</a>
+        </li> -->
+        </ul>
+      </main>
     </div>
-
-    <nav class="nav__container">
-      <button id="changeUser" class="nav__button">Trocar de usuário</button>
-    </nav>
-  </header>
-
-  <main class="main__container">
-    <ul class="main__list">
-      <li class="main__card">
-        <h3>Nome do projeto</h3>
-        <p>Descrição do projeto</p>
-        <a href="#" target="_blank">Repositório</a>
-      </li>
-    </ul>
-  </main>
+  </div>
 </body>
 
 </html>
