@@ -67,7 +67,6 @@
     background-color: var(--color-error);
     width: 80%;
     height: 12.5rem;
-
 }
 
 .errorImage__image {
@@ -100,7 +99,6 @@
         width: 80%;
         height: 99vh;
         margin: 0 auto;
-        gap: 3rem;
     }
 
     .errorImage__image {
@@ -152,13 +150,19 @@
 
 @media(min-width: 1000px) {
     .errorImage__image {
+
         right: 110px;
     }
+
 }
 
 @media(min-width: 1024px) {
+    .errorPage__container {
+        width: 70%;
+    }
+
     .errorImage__image {
-        right: 150px;
+        right: 100px;
     }
 
     .errorMessage__container>p {
@@ -169,5 +173,77 @@
     .errorMessage__container>a {
         width: 342px;
         height: 60px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .errorImage__image {
+        right: 170px;
+    }
+}
+
+@media(min-width: 1300px) {
+    .errorImage__image {
+        right: 150px;
+    }
+}
+
+@media(min-width: 1400px) {
+    .errorPage__container {
+        width: 60%;
+    }
+
+    .errorImage__image {
+        right: 140px;
+    }
+}
+
+@media(min-width: 1500px) {
+    .errorImage__image {
+        right: 150px;
+    }
+}
+
+@media(min-width: 1600px) {
+    .errorImage__image {
+        right: 160px;
+    }
+}
+
+@media(min-width: 1700px) {
+    .errorPage__container {
+        width: 50%;
+    }
+
+    .errorImage__image {
+        right: 140px;
+    }
+}
+
+@media(min-width: 1800px) {
+    .errorImage__image {
+        right: 150px;
+    }
+}
+
+@media(min-width: 1900px) {
+    .errorPage__container {
+        width: 40%;
+    }
+
+    .errorImage__image {
+        right: 110px;
+        top: 340px;
+    }
+}
+
+@media(min-width: 1900px) {
+    .errorPage__container {
+        width: 40%;
+    }
+
+    .errorImage__image {
+        right: 110px;
+        top: 340px;
     }
 }

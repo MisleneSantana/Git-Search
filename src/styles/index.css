@@ -94,6 +94,7 @@
 }
 
 @media (min-width: 479px) {
+
     .search__user,
     .search__button {
         cursor: pointer;
@@ -135,9 +136,8 @@
 
 @media (min-width: 967px) {
     .search__user {
-        width: 296px;
         height: 38px;
-
+        padding: 0 10px;
     }
 
     .search__button {
@@ -150,13 +150,8 @@
 
     .search__title,
     .search__label,
-    .search__user,
     .search__button {
         width: 100%;
     }
 
-    .search__user {
-        width: 95.5%;
-        padding: 0 10px;
-    }
 }
