@@ -151,7 +151,11 @@
     .search__title,
     .search__label,
     .search__button {
-        width: 100%;
+        width: 316px;
+    }
+
+    .search__user {
+        width: 296px;
     }
 
 }
