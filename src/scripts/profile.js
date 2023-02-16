@@ -1,0 +1,26 @@
+import { renderUser, renderRepositary } from './render.js';
+
+export function showSearch() {
+    const user = JSON.parse(localStorage.getItem('userFound'));
+    const repositories = JSON.parse(localStorage.getItem('repositories'));
+
+    renderUser(user);
+
+    renderRepositary(repositories);
+
+    return user;
+}
+
+function newSearch() {
+    let buttonChangeUser = document.querySelector('.nav__button');
+
+    if (!buttonChangeUser) return;
+
+    buttonChangeUser.addEventListener('click', (event) => {
+        window.location.replace('/');
+    })
+
+}
+
+showSearch();
+newSearch();

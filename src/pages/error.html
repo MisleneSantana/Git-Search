@@ -1,22 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="pt-BR">
 
-    <!-- FONTES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Git Search - User Not Found</title>
-  </head>
-  <body>
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
 
-    <script type="module" src="../scripts/error.js"></script>
-  </body>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/globalStyles.css">
+  <link rel="stylesheet" href="../styles/search.css">
+  <link rel="stylesheet" href="../styles/profile.css">
+  <link rel="stylesheet" href="../styles/error.css">
+
+  <!-- JS -->
+  <script type="module" src="../scripts/error.js" defer></script>
+
+  <title>Git Search - User Not Found</title>
+</head>
+
+<body>
+
+  <div class="errorPage__container">
+    <section class="errorMessage__container">
+      <h1>Ooops!</h1>
+      <p>Não encontramos o usuário que você procurou, <strong>vamos tentar novamente</strong>.</p>
+      <a href="/">Nova busca</a>
+    </section>
+    <section class="errorImage__container">
+      <div class="errorImage__empty"></div>
+      <div class="errorImage__image">
+        <img src="#" alt="Erro">
+      </div>
+    </section>
+  </div>
+
+</body>
+
 </html>

@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- FONTES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Git Search</title>
-  </head>
-  <body>
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
 
-    <script type="module" src="./src/scripts/index.js"></script>
-  </body>
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/styles/reset.css">
+  <link rel="stylesheet" href="src/styles/globalStyles.css">
+  <link rel="stylesheet" href="src/styles/search.css">
+  <link rel="stylesheet" href="src/styles/profile.css">
+  <link rel="stylesheet" href="src/styles/error.css">
+
+  <!-- JS-->
+  <script type="module" src="src/scripts/index.js" defer></script>
+
+  <title>Git Search</title>
+</head>
+
+<body>
+
+  <div class="searchPage__container">
+    <section class="homePage__container">
+      <h1>Git Search</h1>
+      <p>Encontre e se conecte com profissionais de forma rápida e fácil</p>
+    </section>
+
+    <section class="search__container">
+      <h3 class="search__title">Procurar por um usuário</h3>
+      <p></p>
+      <input class="search__user" type="text" placeholder="Digite um usuário do github aqui..." required="true">
+      <button class="search__button">Ver perfil do github</button>
+    </section>
+  </div>
+
+</body>
+
 </html>

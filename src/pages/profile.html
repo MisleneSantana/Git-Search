@@ -1,22 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="pt-BR">
 
-    <!-- FONTES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Git Search - User Profile</title>
-  </head>
-  <body>
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
 
-    <script type="module" src="../scripts/profile.js"></script>
-  </body>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/globalStyles.css">
+  <link rel="stylesheet" href="../styles/search.css">
+  <link rel="stylesheet" href="../styles/profile.css">
+  <link rel="stylesheet" href="../styles/error.css">
+
+  <!-- JS-->
+               
+  <script type="module" src="../scripts/profile.js" defer></script>
+
+  <title>Git Search - User Profile</title>
+</head>
+
+<body>
+  <header>
+    <div class="header__container">
+      <figure class="header__user">
+        <img src="#" alt="User Photo">
+        <figcaption>Nome do usuário</figcaption>
+      </figure>
+    </div>
+
+    <nav class="nav__container">
+      <button id="changeUser" class="nav__button">Trocar de usuário</button>
+    </nav>
+  </header>
+
+  <main class="main__container">
+    <ul class="main__list">
+      <li class="main__card">
+        <h3>Nome do projeto</h3>
+        <p>Descrição do projeto</p>
+        <a href="#" target="_blank">Repositório</a>
+      </li>
+    </ul>
+  </main>
+</body>
+
 </html>
