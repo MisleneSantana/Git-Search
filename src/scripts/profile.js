@@ -14,7 +14,7 @@ function newSearch() {
     if (!buttonChangeUser) return;
 
     buttonChangeUser.addEventListener('click', (event) => {
-        window.location.replace('/');
+        window.location.replace('../../index.html');
     })
 }
 

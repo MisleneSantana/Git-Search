@@ -55,7 +55,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 .errorImage__empty,
@@ -64,21 +63,23 @@
 }
 
 .errorImage__empty {
-    background-color: var(--color-error);
     width: 80%;
-    height: 12.5rem;
+    height: 60%;
+    position: relative;
+    background-color: var(--color-error);
+
 }
 
 .errorImage__image {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--secondary-brand-color);
-    width: 80%;
-    height: 12.5rem;
     position: absolute;
-    top: 85px;
-    right: 45px;
+    top: -15px;
+    right: 15px;
 }
 
 .errorImage__image>img {
@@ -86,14 +87,7 @@
     height: 80px;
 }
 
-@media(min-width: 321px) {
-    .errorImage__image {
-        top: 85px;
-        right: 55px;
-    }
-}
-
-@media(min-width: 480px) {
+@media(min-width: 580px) {
     .errorPage__container {
         flex-direction: row;
         width: 80%;
@@ -101,10 +95,17 @@
         margin: 0 auto;
     }
 
+    .errorImage__empty,
     .errorImage__image {
-        position: absolute;
-        top: 320px;
+        width: 200px;
+        height: 180px;
     }
+
+    .errorImage__image {
+        top: -15px;
+        right: 15px;
+    }
+
 
     .errorMessage__container,
     .errorImage__container {
@@ -122,69 +123,8 @@
 
     .errorImage__empty,
     .errorImage__image {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-@media(min-width: 800px) {
-    .errorImage__image {
-        top: 320px;
-        right: 70px;
-    }
-}
-
-@media(min-width: 860px) {
-    .errorImage__image {
-        top: 320px;
-        right: 90px;
-    }
-}
-
-@media(min-width: 960px) {
-    .errorImage__image {
-        top: 320px;
-        right: 100px;
-    }
-}
-
-@media(min-width: 1000px) {
-    .errorImage__image {
-
-        right: 110px;
-    }
-
-}
-
-@media(min-width: 1024px) {
-    .errorPage__container {
-        width: 70%;
-    }
-
-    .errorImage__image {
-        right: 100px;
-    }
-
-    .errorMessage__container>p {
-        width: 342px;
-        height: 60px;
-    }
-
-    .errorMessage__container>a {
-        width: 342px;
-        height: 60px;
-    }
-}
-
-@media(min-width: 1200px) {
-    .errorImage__image {
-        right: 170px;
-    }
-}
-
-@media(min-width: 1300px) {
-    .errorImage__image {
-        right: 150px;
+        width: 240px;
+        height: 220px;
     }
 }
 
@@ -192,58 +132,17 @@
     .errorPage__container {
         width: 60%;
     }
-
-    .errorImage__image {
-        right: 140px;
-    }
-}
-
-@media(min-width: 1500px) {
-    .errorImage__image {
-        right: 150px;
-    }
-}
-
-@media(min-width: 1600px) {
-    .errorImage__image {
-        right: 160px;
-    }
 }
 
 @media(min-width: 1700px) {
     .errorPage__container {
         width: 50%;
     }
-
-    .errorImage__image {
-        right: 140px;
-    }
-}
-
-@media(min-width: 1800px) {
-    .errorImage__image {
-        right: 150px;
-    }
 }
 
 @media(min-width: 1900px) {
     .errorPage__container {
         width: 40%;
     }
-
-    .errorImage__image {
-        right: 110px;
-        top: 340px;
-    }
 }
 
-@media(min-width: 1900px) {
-    .errorPage__container {
-        width: 40%;
-    }
-
-    .errorImage__image {
-        right: 110px;
-        top: 340px;
-    }
-}
